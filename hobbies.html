@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies & Skills</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f4f7fc;
+      color: #0e0d0d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #eff4f4;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #f39c12;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-top: 80px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1200px;
+      gap: 20px;
+    }
+
+    .section {
+      width: 45%;
+      background: #f7f9f9;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #0c0c0c;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .section ul li {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
+      background: #d7dbe1;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section ul li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .section ul li h4 {
+      font-size: 1.3rem;
+      color: #34495e;
+      margin-bottom: 5px;
+    }
+
+    .section ul li p {
+      font-size: 1rem;
+      color: #0e0f0f;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="expertise.html">Expertise</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="Blogs/index.html">Blogs</a></li> 
+    </ul>
+  </nav>
+  
+  
+
+  <div class="main-container">
+    <div class="section hobbies">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>
+          <h4>Cooking</h4>
+          <p>Experimenting with new recipes and learning culinary techniques.</p>
+        </li>
+        <li>
+          <h4>Reading</h4>
+          <p>Staying updated with technology news, articles, and books to expand knowledge.</p>
+        </li>
+        <li>
+          <h4>Debates</h4>
+          <p>Engaging in debates, especially in the field of technology and innovations.</p>
+        </li>
+        <li>
+          <h4>Nature & Outdoor Activities</h4>
+          <p>Enjoying walks, hiking, and connecting with nature.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section skills">
+      <h2>Core Skills</h2>
+      <ul>
+        <li>
+          <h4>Computer Proficiency</h4>
+          <p>Expert knowledge in various computing platforms and software tools.</p>
+        </li>
+        <li>
+          <h4>Leadership</h4>
+          <p>Proven leadership in managing teams and projects.</p>
+        </li>
+        <li>
+          <h4>Time Management</h4>
+          <p>Efficient at prioritizing tasks and meeting deadlines.</p>
+        </li>
+        <li>
+          <h4>Communication</h4>
+          <p>Clear communication, both written and verbal, in technical and non-technical contexts.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

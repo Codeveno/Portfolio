@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #0d1f2d;
+  padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+.blog-header {
+  text-align: center;
+  background: #1e3a5f;
+  color: #fff;
+  padding: 20px 20px;
+  margin-top: 60px;
+  border-bottom: 5px solid #f39c12;
+}
+
+.blog-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.blog-header p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.blog-list-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-summary {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-summary h2 a {
+  color: #1e3a5f;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+}
+
+.blog-summary h2 a:hover {
+  color: #f39c12;
+}
+
+.blog-summary p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 15px;
+  text-align: justify;
+}
+
+.read-more {
+  display: inline-block;
+  margin: 15px;
+  color: white;
+  background: #f39c12;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.read-more:hover {
+  background: #d17909;
+}
+
+.blog-content {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.blog-content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 {
+  color: #1e3a5f;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.blog-content p {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #444;
+}
+
+.blog-content a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+
+.social-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #ddd;
+  margin-top: 5px;
+}
+
+
+.footer p {
+  font-size: 0.7rem;
+  margin-top: 2px;
+  text-align: center;
+  color: #d3d3d3;
+
+  padding: 5px 0;
+}
+
+
+
+/* Support My Work Section */
+.support-work {
+  background: linear-gradient(135deg, #6e7c8a, #1e3a5f);
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.support-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.support-content h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.support-content p {
+  font-size: 1rem;
+  color: #f4f4f4;
+  margin-bottom: 15px;
+}
+
+/* Flexbox Container for Donation Sections */
+.donation-flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Donation Boxes */
+.donation-box, .crypto-donation {
+  background-color: #2e4756;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Default to full width */
+  flex: 1; /* Allow boxes to grow and shrink */
+  max-width: 45%; /* Reduced width for the boxes */
+  min-height: 250px; /* Increased height for boxes */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donation-box h4, .crypto-donation h4 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.donation-box p, .crypto-donation p {
+  font-size: 0.9rem;
+  color: #f4f4f4;
+  margin-bottom: 8px;
+}
+
+.donation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.donation-buttons a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.donation-buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.paypal-link {
+  background-color: #0070ba;
+}
+
+.paypal-link:hover {
+  background-color: #005e92;
+}
+
+.mpesa-link {
+  background-color: #00b140;
+}
+
+.mpesa-link:hover {
+  background-color: #009430;
+}
+
+.buymeacoffee-link {
+  background-color: #ff813f;
+}
+
+.buymeacoffee-link:hover {
+  background-color: #e56e2c;
+}
+
+.paypal-icon,
+.mpesa-icon,
+.buymeacoffee-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.donation-buttons .buymeacoffee-link {
+  background-color: #40DCA5;
+}
+
+.donation-buttons .buymeacoffee-link:hover {
+  background-color: #32a57b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donation-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-box, .crypto-donation {
+    max-width: 80%; /* More narrow on smaller screens */
+    margin-bottom: 20px;
+  }
+}
