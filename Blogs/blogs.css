@@ -34,13 +34,13 @@ body {
 }
 
 .navbar li {
-  margin: 0 10px; /* Reduced the space */
+  margin: 0 10px;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  font-size: 0.9rem; /* Smaller font size */
+  font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
@@ -58,13 +58,13 @@ body {
 }
 
 .blog-header h1 {
-  font-size: 1.6rem; /* Reduced font size */
+  font-size: 1.6rem;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 .blog-header p {
-  font-size: 0.9rem; /* Smaller font size */
+  font-size: 0.9rem;
   color: #ddd;
 }
 
@@ -77,17 +77,17 @@ body {
 .blog-flexbox {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Reduced gap between blog boxes */
+  gap: 10px;
   justify-content: space-between;
 }
 
 .blog-summary {
   background: white;
   border: none;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 22%; /* Reduced width for 4 boxes per line */
-  height: 300px; /* Reduced height */
+  width: 22%;
+  height: 300px;
   padding: 0;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -101,14 +101,14 @@ body {
 
 .blog-image {
   width: 100%;
-  height: 120px; /* Reduced image height */
+  height: 120px;
   object-fit: cover;
 }
 
 .blog-summary h2 a {
   color: #1e3a5f;
   text-decoration: none;
-  font-size: 1rem; /* Smaller heading font size */
+  font-size: 1rem;
   font-weight: bold;
   padding: 5px 10px;
   display: block;
@@ -119,23 +119,23 @@ body {
 }
 
 .blog-summary p {
-  font-size: 0.85rem; /* Even smaller font size for summary text */
+  font-size: 0.85rem;
   color: #666;
-  margin: 8px 10px; /* Smaller margin */
+  margin: 8px 10px;
   text-align: justify;
 }
 
 .read-more {
   display: inline-block;
-  margin: 10px 0; /* Adjusted margin */
+  margin: 10px 0;
   color: white;
   background: #f39c12;
-  padding: 6px 12px; /* Smaller padding for "Read More" button */
+  padding: 6px 12px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.8rem; /* Smaller font size for button */
-  width: 80%; /* Adjusted width */
+  font-size: 0.8rem;
+  width: 80%;
   text-align: center;
 }
 
@@ -151,14 +151,14 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   line-height: 1.6;
-  font-size: 1rem; /* Slightly reduced font size */
+  font-size: 1rem;
 }
 
 .blog-content img {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
 }
 
 .blog-content h1, .blog-content h2, .blog-content h3 {
@@ -182,7 +182,6 @@ body {
   text-decoration: underline;
 }
 
-/* Footer Styles */
 .footer {
   position: relative;
   bottom: 0;
@@ -191,7 +190,7 @@ body {
   color: white;
   padding: 10px 0;
   text-align: center;
-  font-size: 0.75rem; /* Smaller font size */
+  font-size: 0.75rem;
 }
 
 .footer-content {
@@ -209,7 +208,7 @@ body {
 
 .social-link {
   display: block;
-  width: 20px; /* Smaller social icons */
+  width: 20px;
   height: 20px;
   border-radius: 50%;
   overflow: hidden;
@@ -228,21 +227,13 @@ body {
 }
 
 footer p {
-  font-size: 0.7rem;
-  color: #ddd;
-  margin-top: 5px;
-}
-
-.footer p {
   font-size: 0.6rem;
   margin-top: 2px;
   text-align: center;
   color: #d3d3d3;
-
   padding: 5px 0;
 }
 
-/* Support My Work Section */
 .support-work {
   background: linear-gradient(135deg, #6e7c8a, #1e3a5f);
   padding: 15px 0;
@@ -258,19 +249,18 @@ footer p {
 }
 
 .support-content h3 {
-  font-size: 1.4rem; /* Smaller title font size */
+  font-size: 1.4rem;
   color: #ffffff;
   margin-bottom: 8px;
   font-weight: bold;
 }
 
 .support-content p {
-  font-size: 0.9rem; /* Smaller description font size */
+  font-size: 0.9rem;
   color: #f4f4f4;
   margin-bottom: 15px;
 }
 
-/* Flexbox Container for Donation Sections */
 .donation-flex-container {
   display: flex;
   justify-content: space-between;
@@ -279,30 +269,29 @@ footer p {
   margin-top: 20px;
 }
 
-/* Donation Boxes */
 .donation-box, .crypto-donation {
   background-color: #2e4756;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Default to full width */
-  flex: 1; /* Allow boxes to grow and shrink */
-  max-width: 45%; /* Reduced width for the boxes */
-  min-height: 250px; /* Increased height for boxes */
+  width: 100%;
+  flex: 1;
+  max-width: 45%;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .donation-box h4, .crypto-donation h4 {
-  font-size: 1.3rem; /* Smaller donation title */
+  font-size: 1.3rem;
   color: #ffffff;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .donation-box p, .crypto-donation p {
-  font-size: 0.8rem; /* Smaller text for donation boxes */
+  font-size: 0.8rem;
   color: #f4f4f4;
   margin-bottom: 8px;
 }
@@ -372,7 +361,6 @@ footer p {
   background-color: #32a57b;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .donation-flex-container {
     flex-direction: column;
@@ -380,12 +368,11 @@ footer p {
   }
 
   .donation-box, .crypto-donation {
-    max-width: 80%; /* More narrow on smaller screens */
+    max-width: 80%;
     margin-bottom: 20px;
   }
 
   .blog-summary {
-    width: 48%; /* Adjusted to make it fit 2 per line in smaller screens */
+    width: 48%;
   }
 }
-
