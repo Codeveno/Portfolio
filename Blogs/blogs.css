@@ -8,7 +8,7 @@
 body {
   background-color: #f4f4f9;
   color: #333;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   display: flex;
@@ -34,13 +34,13 @@ body {
 }
 
 .navbar li {
-  margin: 0 15px;
+  margin: 0 10px; /* Reduced the space */
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller font size */
   transition: color 0.3s ease;
 }
 
@@ -52,63 +52,65 @@ body {
   text-align: center;
   background: #1e3a5f;
   color: #fff;
-  padding: 20px 20px;
+  padding: 15px 20px;
   margin-top: 60px;
-  border-bottom: 5px solid #f39c12;
+  border-bottom: 4px solid #f39c12;
 }
 
 .blog-header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  font-size: 1.6rem; /* Reduced font size */
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
 .blog-header p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller font size */
   color: #ddd;
 }
 
 .blog-list-container {
   max-width: 1200px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .blog-flexbox {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  gap: 10px; /* Reduced gap between blog boxes */
+  justify-content: space-between;
 }
 
 .blog-summary {
   background: white;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 22%; /* Reduced width for 4 boxes per line */
+  height: 300px; /* Reduced height */
   padding: 0;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
 }
 
 .blog-summary:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .blog-image {
   width: 100%;
-  height: 200px;
+  height: 120px; /* Reduced image height */
   object-fit: cover;
 }
 
 .blog-summary h2 a {
   color: #1e3a5f;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1rem; /* Smaller heading font size */
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 5px 10px;
   display: block;
 }
 
@@ -117,22 +119,24 @@ body {
 }
 
 .blog-summary p {
-  font-size: 1rem;
+  font-size: 0.85rem; /* Even smaller font size for summary text */
   color: #666;
-  margin: 10px 15px;
+  margin: 8px 10px; /* Smaller margin */
   text-align: justify;
 }
 
 .read-more {
   display: inline-block;
-  margin: 15px;
+  margin: 10px 0; /* Adjusted margin */
   color: white;
   background: #f39c12;
-  padding: 10px 20px;
+  padding: 6px 12px; /* Smaller padding for "Read More" button */
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8rem; /* Smaller font size for button */
+  width: 80%; /* Adjusted width */
+  text-align: center;
 }
 
 .read-more:hover {
@@ -146,25 +150,25 @@ body {
   background-color: #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  line-height: 1.8;
-  font-size: 1.05rem;
+  line-height: 1.6;
+  font-size: 1rem; /* Slightly reduced font size */
 }
 
 .blog-content img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
-  border-radius: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px; /* Rounded corners */
 }
 
 .blog-content h1, .blog-content h2, .blog-content h3 {
   color: #1e3a5f;
-  margin-bottom: 15px;
-  line-height: 1.4;
+  margin-bottom: 12px;
+  line-height: 1.3;
 }
 
 .blog-content p {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: justify;
   color: #444;
 }
@@ -187,7 +191,7 @@ body {
   color: white;
   padding: 10px 0;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.75rem; /* Smaller font size */
 }
 
 .footer-content {
@@ -205,8 +209,8 @@ body {
 
 .social-link {
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 20px; /* Smaller social icons */
+  height: 20px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #fff;
@@ -224,22 +228,19 @@ body {
 }
 
 footer p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #ddd;
   margin-top: 5px;
 }
 
-
 .footer p {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   margin-top: 2px;
   text-align: center;
   color: #d3d3d3;
 
   padding: 5px 0;
 }
-
-
 
 /* Support My Work Section */
 .support-work {
@@ -257,14 +258,14 @@ footer p {
 }
 
 .support-content h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem; /* Smaller title font size */
   color: #ffffff;
   margin-bottom: 8px;
   font-weight: bold;
 }
 
 .support-content p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller description font size */
   color: #f4f4f4;
   margin-bottom: 15px;
 }
@@ -294,14 +295,14 @@ footer p {
 }
 
 .donation-box h4, .crypto-donation h4 {
-  font-size: 1.4rem;
+  font-size: 1.3rem; /* Smaller donation title */
   color: #ffffff;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .donation-box p, .crypto-donation p {
-  font-size: 0.9rem;
+  font-size: 0.8rem; /* Smaller text for donation boxes */
   color: #f4f4f4;
   margin-bottom: 8px;
 }
@@ -382,4 +383,9 @@ footer p {
     max-width: 80%; /* More narrow on smaller screens */
     margin-bottom: 20px;
   }
+
+  .blog-summary {
+    width: 48%; /* Adjusted to make it fit 2 per line in smaller screens */
+  }
 }
+
